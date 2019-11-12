@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formulaire - Contact</title>
+</head>
+<body>
+    <fieldset>
+        <legend>Vos Coordonnés</legend>
+        <p>* Ces zones sont obligatoires pour envoyer le formulaire.</p>
+        <form  method="POST">
+            <label for="society">Société : *</label> 
+            <input id="society" type="text"><br><br>
+            <label for="person">Personne à contacter : *</label> 
+            <input id="person" type="text"><br><br>
+            <label for="adress">Adresse de l'entreprise :</label>
+            <textarea id="adress" cols="30" rows="0"></textarea><br><br> 
+            <label for="cp">Code postal : *</label> 
+            <input id="cp" type="text"><br><br>
+            <label for="city">Ville : *</label> 
+            <input id="city" type="text"><br><br>
+            <label for="mail">E-mail : *</label> 
+            <input id="mail" type="email"><br><br>
+            <label for="phone">Téléphone :</label> 
+            <input id="phone" type="text"><br><br>
+            <label for="select">Sélectionnez l'environnement technique du projet :</label><br>
+            <select id="select">
+                <option id="default" value="default">Choisissez</option>
+                <option value="access">Access</option>
+                <option value="java">Java</option>
+                <option value="delphi">Delphi</option>
+                <option value="windev">WinDev</option>
+                <option value="vb">Visual Basic</option>
+                <option value="pb">power Builder</option>
+                <option value="internet">Internet</option>
+                <option value="intranet">Intranet</option>
+                <option value="wnt">Windows NT</option>
+                <option value="unix">Unix</option>
+                <option value="sql">SQL Server</option>
+                <option value="oracle">Oracle</option>
+                <option value="other">Autres...</option>
+            </select><br>
+            <textarea id="infoSelect" cols="20" rows="10"></textarea><br><br> 
+            <button type="submit" id="submit">Envoyer</button>
+            <button type="reset" id="reset">Effacer</button>
+        </form>
+    </fieldset>
+    <script src="assets/js/formulaire.js"></script>
+</body>
+</html>
